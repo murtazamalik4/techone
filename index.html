@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com -->
+<!-- Last Published: Mon Nov 07 2022 14:27:09 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="sight-banking.webflow.io" data-wf-page="632b3d7a3cec1a66054ca1cc"
+    data-wf-site="62fa5980cd922182416f3647" data-wf-status="1">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sight Banking</title>
+    <meta content="/62fa5980cd922182416f3647/6310bc7084e35b3d5257017c_opengraph.webp"
+        property="og:image" />
+    <meta content="/62fa5980cd922182416f3647/6310bc7084e35b3d5257017c_opengraph.webp"
+        property="twitter:image" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="/62fa5980cd922182416f3647/css/sight-banking.webflow.13c4f7d07.min.css"
+        rel="stylesheet" type="text/css" />
+    <script src="https://use.typekit.net/mbk7fec.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) { }
+    </script>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+    <script type="text/javascript">
+        ! function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="/62fa5980cd922182416f3647/63106ecc9721a71e17b52808_favicon.webp"
+        rel="shortcut icon" type="image/x-icon" />
+    <link href="/62fa5980cd922182416f3647/63106ec5ff915b44132bac24_Webclip.webp"
+        rel="apple-touch-icon" />
+    <!-- Please keep this css code to improve the font quality-->
+    <style>
+        .w-webflow-badge {
+            display: none !important;
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff8049;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        input::-webkit-input-placeholder {
+            transition: .2s;
+        }
+
+        input:-moz-placeholder {
+            transition: .2s;
+        }
+
+        input::-moz-placeholder {
+            transition: .2s;
+        }
+
+        input:-ms-input-placeholder {
+            transition: .2s;
+        }
+
+        input:focus:-ms-input-placeholder {
+            opacity: 0;
+        }
+
+        input:focus::-moz-placeholder {
+            opacity: 0;
+        }
+
+        input:focus:-moz-placeholder {
+            opacity: 0;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            opacity: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div class="page-wrap bg-test">
+        <div class="global-styles w-embed">
+            <style>
+                /* Snippet gets rid of top margin on first element in any rich text*/
+
+                .w-richtext>:first-child {
+                    margin-top: 0;
+                }
+
+                /* Snippet gets rid of bottom margin on last element in any rich text*/
+
+                .w-richtext>:last-child,
+                .w-richtext ol li:last-child,
+                .w-richtext ul li:last-child {
+                    margin-bottom: 0;
+                }
+
+                /* Snippet prevents all click and hover interaction with an element */
+
+                .clickable-off {
+                    pointer-events: none;
+                }
+
+                /* Snippet enables all click and hover interaction with an element */
+
+                .clickable-on {
+                    pointer-events: auto;
+                }
+
+                /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+
+                .div-square::after {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+
+                /*Hide focus outline for main content element*/
+
+                main:focus-visible {
+                    outline: -webkit-focus-ring-color auto 0px;
+                }
+
+                /* Make sure containers never lose their center alignment*/
+
+                .container-medium,
+                .container-small,
+                .container-large {
+                    margin-right: auto !important;
+                    margin-left: auto !important;
+                }
+
+                /*Reset buttons, and links styles*/
+
+                a {
+                    color: inherit;
+                    text-decoration: inherit;
+                    font-size: inherit;
+                }
+
+                /*Apply "..." after 3 lines of text */
+
+                .text-style-3lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+
+                /*Apply "..." after 2 lines of text */
+
+                .text-style-2lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                /* MY CSS */
+
+                .nav-link::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    height: 2px;
+                    width: 0%;
+                    background: #304761;
+                    transition: all 300ms ease;
+                }
+
+                .nav-link::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    height: 2px;
+                    width: 0%;
+                    background: #304761;
+                    transition: all 300ms ease;
+                }
+
+                .nav-link.text-color-white::before,
+                .nav-link.text-color-white::after {
+                    content: '';
+                    background: #fff;
+                }
+
+                .nav-link:hover::after,
+                .nav-link:hover::before {
+                    width: 50%
+                }
+
+                /** Animate bg **/
+
+                @-webkit-keyframes BGhero2 {
+                    from {
+                        background-position: 50% 0%;
+                    }
+
+                    to {
+                        background-position: 50% -1400%;
+                    }
+                }
+
+                @-webkit-keyframes BGhero {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    33% {
+                        opacity: 1;
+                    }
+
+                    66% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+                .hero__bg {
+                    -webkit-animation: BGhero 10s linear infinite;
+                    -moz-animation: BGhero 10s linear infinite;
+                    animation: BGhero 10s linear infinite;
+                }
+
+                .hero__join:hover .overflow__anim {
+                    bottom: 2rem;
+                }
+
+                .hero__join:hover .arrow-wrap {
+                    -webkit-transform: scale(1.15);
+                    -ms-transform: scale(1.15);
+                    transform: scale(1.15);
+                }
+
+                .btn-arrow:hover .overflow__anim {
+                    left: 2rem;
+                }
+
+                /** swiper **/
+
+                .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                    position: relative;
+                    width: 33.333333333333336%;
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 auto;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    max-height: 2px;
+                    margin: 0px;
+                    -webkit-transition: all 100ms ease;
+                    transition: all 100ms ease;
+                    opacity: 0;
+                }
+
+                .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                    opacity: 1;
+                }
+
+                .swiper-pagination-bullets.swiper-pagination-horizontal {
+                    left: -140px;
+                    width: 287px;
+                }
+
+                @-webkit-keyframes runline {
+                    from {
+                        background-position: 0% 50%;
+                    }
+
+                    to {
+                        background-position: 8000% 0%;
+                    }
+                }
+
+                .section.mod--runline {
+                    -webkit-animation: runline 1200s linear infinite;
+                    -moz-animation: runline 1200s linear infinite;
+                    animation: runline 1200s linear infinite;
+                }
+
+                [data-anim='hover-zoom']:hover [data-anim='hover-zoom-img'] {
+                    -webkit-transform: translate(0rem, -3.1rem) scale(1);
+                    -ms-transform: translate(0rem, -3.1rem) scale(1);
+                    transform: translate(0rem, -3.1rem) scale(1);
+                }
+
+                /** Services **/
+
+                .services__list-item:nth-child(1):hover .services__hover-pen-line {
+                    width: 1rem;
+                }
+
+                .services__list-item:nth-child(1):hover .services__hover-pen {
+                    -webkit-transform: translate(4px, -6px) rotate(-45deg);
+                    -ms-transform: translate(4px, -6px) rotate(-45deg);
+                    transform: translate(4px, -6px) rotate(-45deg);
+                }
+
+                .services__list-item:nth-child(2):hover .services__hover-finance {
+                    -webkit-transform: scale(0.8) translate(0px, -8px);
+                    -ms-transform: scale(0.8) translate(0px, -8px);
+                    transform: scale(0.8) translate(0px, -8px);
+                }
+
+                .services__list-item:nth-child(3):hover .services__icon div:nth-child(1) {
+                    height: 80%;
+                }
+
+                .services__list-item:nth-child(3):hover .services__icon div:nth-child(2) {
+                    height: 60%;
+                }
+
+                .services__list-item:nth-child(3):hover .services__icon div:nth-child(3) {
+                    height: 30%;
+                }
+
+                .services__btn:hover .overflow__anim,
+                .about__card:hover .overflow__anim {
+                    left: 2rem;
+                    bottom: 2rem;
+                }
+
+                .appstore__link:hover img {
+                    -webkit-filter: brightness(0%) invert(200%);
+                    filter: brightness(0%) invert(200%);
+                }
+
+                .reviews__btn-star-wrap:hover img {
+                    -webkit-filter: brightness(100%) invert(0%);
+                    filter: brightness(100%) invert(0%);
+                }
+
+                .about__card:hover .about__img.mod--hover {
+                    -webkit-transform: translate(0px, 20px) scale(0.9);
+                    -ms-transform: translate(0px, 20px) scale(0.9);
+                    transform: translate(0px, 20px) scale(0.9);
+                }
+
+                .about__card:hover .about__balance-circle {
+                    -webkit-transform: rotate(70deg);
+                    -ms-transform: rotate(70deg);
+                    transform: rotate(70deg);
+                }
+
+                /*Fluid responsive */
+
+                html {
+                    font-size: 1rem;
+                }
+
+                @media screen and (max-width:2560px) {
+                    html {
+                        font-size: calc(0.5000000000000003rem + 0.6249999999999998vw);
+                    }
+                }
+
+                @media screen and (max-width:1920px) {
+                    html {
+                        font-size: 1rem;
+                    }
+                }
+
+                @media screen and (min-width: 1280px) and (max-height: 640px) {
+                    html {
+                        font-size: 1.8vh;
+                    }
+                }
+
+                @media screen and (max-width: 1280px) {
+                    html {
+                        font-size: 1.15vw;
+                    }
+                }
+            </style>
+        </div>
+        <header
+            style="-webkit-transform:translate3d(0, -4.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -4.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -4.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -4.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="section mod--header">
+            <div class="content">
+                <div class="columns mod--header">
+                    <div class="col col--1 mod--header"><a href="#" class="logo-link w-inline-block"><img
+                                src="/62fa5980cd922182416f3647/62fb641638b30a1eba454642_logo.svg"
+                                loading="eager" alt="" class="logo mod--header" /></a></div>
+                    <div class="col col--2 mod--header">
+                        <div class="nav">
+                                <a data-remodal-target="form" href="./index.html"
+                                class="nav-link text-color-white">Home</a>
+                                <a data-remodal-target="form" href="./aboutUs.html" class="nav-link text-color-white">About us</a>
+                               
+                        </div>
+                    </div>
+                    <div class="col col--3 mod--header">
+                        <a data-remodal-target="form" href="#" class="btn btn--border btn--white w-inline-block">
+                            <div class="overflow-hidden mod--btn">
+                                <div class="overflow__anim mod--interact">
+                                    <div class="btn__txt mod--normal">SIGN UP</div>
+                                    <div class="btn__txt mod--absolute text-color-green">SIGN UP</div>
+                                </div>
+                            </div>
+                            <div class="btn__bg mod--1 mod--white"></div>
+                            <div class="btn__bg mod--2 mod--white"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section id="home" data-w-id="af609c91-8cc0-50e8-447d-1b93b74024a9" class="section mod--hero">
+                <div style="opacity:0" class="hero__content-wrap">
+                    <div class="content">
+                        <div class="hero__content">
+                            <p data-w-id="8db1b536-f9a7-f56e-ccf9-d1321667ccde"
+                                style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="text-size-18 mod--hero-overheading">HIRE THE BEST WITH US</p>
+                            <div class="overflow-hidden">
+                                <h1 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading mod--hero">Empower Your</h1>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h2 class="heading mod--hero heading-large">Success With</h2>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h2 class="heading mod--hero heading-large">Top-tier IT Talent</h2>
+                            </div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="hero__join-wrap">
+                            <a data-remodal-target="form" data-anim="slide-up" href="#"
+                                class="hero__join w-inline-block">
+                                <div class="overflow-hidden">
+                                    <div class="overflow__anim">
+                                        <div class="btn__txt mod--normal">FIND THE RIGHT TALENT</div>
+                                        <div class="btn__txt mod--absolute">PLEASE FILL THIS FORM</div>
+                                    </div>
+                                </div>
+                                <div class="arrow-wrap text-color-orange mod--join">
+                                    <div class="icon mod--arrow-btn w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                            height="100%" aria-hidden="true" role="img" fill=currentColor
+                                            xmlns="http://www.w3.org/2000/svg">
+
+                                            <path
+                                                d="M5.7,1.1c1.1-1.1,2.9-1.1,4,0l8.9,8.9c1.1,1.1,1.1,2.9,0,4l-8.9,8.9c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4 l6.9-6.9L5.7,5.1C4.6,4,4.6,2.2,5.7,1.1L5.7,1.1z" />
+                                        </svg></div>
+                                </div>
+                            </a><img
+                                src="/62fa5980cd922182416f3647/62fb84acc273de608e3b820c_btn-join-shadow.svg"
+                                loading="lazy" alt="" class="hero__join-shadow" />
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="cards__parallax">
+                            <div class="cards__card-wrap mod--1">
+                                <div class="cards__card-content mod--1">
+                                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(8deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(8deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(8deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(8deg) skew(0, 0)"
+                                        class="cards__card mod--1">
+                                        <div class="card__shine-wrap">
+                                            <div class="card__shine"></div>
+                                        </div>
+                                    </div><img
+                                        src="/62fa5980cd922182416f3647/62fb8877d1985714a70fc49e_credit-card-shadow2.svg"
+                                        loading="eager" alt="" class="cards__shadow" />
+                                </div>
+                            </div>
+                            <div class="cards__card-wrap mod--2">
+                                <div class="cards__card-content mod--2">
+                                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(null) rotateZ(-12deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(null) rotateZ(-12deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(null) rotateZ(-12deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(null) rotateZ(-12deg) skew(0, 0);transform-style:preserve-3d"
+                                        class="cards__card mod--2">
+                                        <div class="card__shine-wrap">
+                                            <div class="card__shine mod--2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="hero__bg-orange"></div>
+                    </div>
+                    <div class="content">
+                        <div style="-webkit-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="featured__block">
+                            <div class="featured__top">
+                                <div class="columns mod--featured">
+                                    <div class="col col--1 mod--featured">
+                                        <div data-anim="featured-overflow" class="overflow-hidden mod--featured">
+                                            <div class="featured__anim active">
+                                                <h3>Full financial visibility <br />all in one place</h3>
+                                            </div>
+                                            <div class="featured__anim done">
+                                                <h3>Reliable &amp; effective financial counting</h3>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <h3>Issuing a loan with favorable terms</h3>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <h3>Modern traditions of quality &amp; stability</h3>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <h3>Bank management - high professionals</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col--2 mod--featured">
+                                        <div data-anim="featured-overflow" class="overflow-hidden mod--featured">
+                                            <div class="featured__anim active">
+                                                <p class="text-size-20 opacity-70">Get interest on your money,
+                                                    personalised budgeting and much more features.</p>
+                                            </div>
+                                            <div class="featured__anim done">
+                                                <p class="text-size-20 opacity-70">You can easily track and analyze your
+                                                    money accounts with the help of bank consultants.</p>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <p class="text-size-20 opacity-70">Once accepted, the funds will go to
+                                                    your card. Use credit and keep your internal balance in balance.</p>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <p class="text-size-20 opacity-70">A strong reputation as a socially
+                                                    responsible company that provides customers with world-class
+                                                    services.</p>
+                                            </div>
+                                            <div class="featured__anim">
+                                                <p class="text-size-20 opacity-70">All of Sight Bank&#x27;s top managers
+                                                    are recognized with awards in their respective areas of business.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col--3 mod--featured">
+                                        <div class="featured__by">FEATURED BY</div>
+                                        <div data-anim="featured-overflow"
+                                            class="overflow-hidden mod--featured mod--by-logo">
+                                            <div class="featured__anim active"><img
+                                                    src="/62fa5980cd922182416f3647/62fb6417c0871b3891d9c4f0_logo-Bloomberg.svg"
+                                                    loading="lazy" alt="" class="featured__logo mod--by mod--1" /></div>
+                                            <div class="featured__anim done"><img
+                                                    src="/62fa5980cd922182416f3647/62fb6417056b6949be6f60f1_logo-G.svg"
+                                                    loading="lazy" alt="" class="featured__logo mod--by mod--2" /></div>
+                                            <div class="featured__anim"><img
+                                                    src="/62fa5980cd922182416f3647/62fb6417bbaf09f5c1f97287_logo-Forbes.svg"
+                                                    loading="lazy" alt="" class="featured__logo mod--by mod--3" /></div>
+                                            <div class="featured__anim"><img
+                                                    src="/62fa5980cd922182416f3647/62fb641671e3a717276b0f1e_logo-BBC.svg"
+                                                    loading="lazy" alt="" class="featured__logo mod--by mod--4" /></div>
+                                            <div class="featured__anim"><img
+                                                    src="/62fa5980cd922182416f3647/62fb641738b30ace22454644_logo-DW.svg"
+                                                    loading="lazy" alt="" class="featured__logo mod--by mod--5" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured__bottom">
+                                <div class="columns mod--featured-choose">
+                                    <div class="featured__line"></div>
+                                    <div class="col mod--featured-choose active"><img
+                                            src="/62fa5980cd922182416f3647/62fb6417c0871b3891d9c4f0_logo-Bloomberg.svg"
+                                            loading="lazy" alt="" class="featured__logo mod--1" /></div>
+                                    <div class="col mod--featured-choose"><img
+                                            src="/62fa5980cd922182416f3647/62fb6417056b6949be6f60f1_logo-G.svg"
+                                            loading="lazy" alt="" class="featured__logo mod--2" /></div>
+                                    <div class="col mod--featured-choose"><img
+                                            src="/62fa5980cd922182416f3647/62fb6417bbaf09f5c1f97287_logo-Forbes.svg"
+                                            loading="lazy" alt="" class="featured__logo mod--3" /></div>
+                                    <div class="col mod--featured-choose"><img
+                                            src="/62fa5980cd922182416f3647/62fb641671e3a717276b0f1e_logo-BBC.svg"
+                                            loading="lazy" alt="" class="featured__logo mod--4" /></div>
+                                    <div class="col mod--featured-choose"><img
+                                            src="/62fa5980cd922182416f3647/62fb641738b30ace22454644_logo-DW.svg"
+                                            loading="lazy" alt="" class="featured__logo mod--5" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__bg"></div>
+                </div>
+            </section>
+            <section id="about-us" class="section padding-top-144">
+                <div class="content">
+                    <div data-w-id="77f4a613-d96a-7b4a-8b69-b56df29fbde5" style="opacity:0"
+                        class="columns mod--about-heading">
+                        <div class="col col--1 mod--about-heading">
+                            <p class="text-size-18">ABOUT US</p>
+                            <a data-remodal-target="form" href="#" class="btnbig w-inline-block">
+                                <div class="btn-big__border"></div>
+                                <div class="btn-big__content">
+                                    <div class="btn-big__bg"></div>
+                                    <div class="btn-big__text">Submit your requirement</div>
+                                    <div class="arrow-wrap text-color-greendark mod--btn-big">
+                                        <div class="icon mod--arrow-btn w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path
+                                                    d="M5.7,1.1c1.1-1.1,2.9-1.1,4,0l8.9,8.9c1.1,1.1,1.1,2.9,0,4l-8.9,8.9c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4 l6.9-6.9L5.7,5.1C4.6,4,4.6,2.2,5.7,1.1L5.7,1.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col col--2">
+                            <div class="overflow-hidden">
+                                <h2 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading">Get desired talent <br /></h2>
+                            </div>
+                            <div class="overflow-hidden margin-bottom-58">
+                                <h2 style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="heading">all in one place</h2>
+                            </div>
+                            <p class="margin-bottom-24">Tech One Consulting is a leading US IT Staffing Agency dedicated
+                                to providing exceptional talent solutions for businesses across diverse industries. With
+                                a robust network of highly skilled professionals and a commitment to excellence, we
+                                strive to exceed expectations and deliver unparalleled results.</p>
+                            <p>At Tech One Consulting, we understand the critical role that technology plays in driving
+                                business growth and innovation. Our team of experienced recruiters and industry experts
+                                possesses a deep understanding of the IT landscape, enabling us to identify and attract
+                                top talent with the right skills and expertise to meet your unique requirements.</p>
+
+                            <a href="./aboutUs.html" class="btn mod--submit w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="btn__txt mod--normal">KNOW MORE</div>
+                                        <div class="btn__txt mod--absolute">KNOW MORE</div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1"></div>
+                                <div class="btn__bg mod--2"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div data-w-id="e58e78a8-dd56-d510-50a0-992074c23356" style="opacity:0" class="columns mod--about">
+                        <div class="col mod--about"></div>
+                        <div class="col mod--about mod--2"><img
+                                src="/62fa5980cd922182416f3647/630cbf828e8cc03f707479a0_financial-Statisctic-01.svg"
+                                loading="lazy" alt="" class="about__img-small mod--1" /><a data-remodal-target="form"
+                                style="-webkit-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                href="#" class="about__card mod--2 w-inline-block"><img
+                                    src="/62fa5980cd922182416f3647/62fb6416bbaf0959b8f97284_financial-woman-01.webp"
+                                    loading="lazy" width="400"
+                                    srcset="/62fa5980cd922182416f3647/62fb6416bbaf0959b8f97284_financial-woman-01-p-500.webp 500w, /62fa5980cd922182416f3647/62fb6416bbaf0959b8f97284_financial-woman-01-p-800.webp 800w, /62fa5980cd922182416f3647/62fb6416bbaf0959b8f97284_financial-woman-01.webp 800w"
+                                    sizes="(max-width: 991px) 29vw, 285.1875px" alt="" class="about__img mod--hover" />
+                                <div class="overflow-hidden mod--about-arrow">
+                                    <div class="overflow__anim">
+                                        <div class="icon mod--overflow-anim mod--about-arrow w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                        <div class="icon mod--about-arrow w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col mod--about mod--3"><a data-remodal-target="form" data-anim-counter="main"
+                                data-w-id="b8a612f3-a1c8-94cd-83d4-49d857b720d4"
+                                style="-webkit-transform:translate3d(0, 11.875rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 11.875rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 11.875rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 11.875rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                href="#" class="about__card mod--3 bg-color-orange w-inline-block"><img
+                                    src="/62fa5980cd922182416f3647/630cb7b15f000adb71a1cfbb_financial-card-01.svg"
+                                    loading="lazy" width="400" alt="" class="about__img" />
+                                <div class="about__total-wrap">
+                                    <div data-anim-counter-second="110128" data-anim-counter-first="10"> <span
+                                            class="about__total-span">10+ Hirings</span></div>
+                                </div><img
+                                    src="/62fa5980cd922182416f3647/62fb64162fcf2267c8a97dbc_ava-boy.webp"
+                                    loading="lazy" alt="" class="about__img-ava" />
+                                <div data-lottie="graph-1" data-is-ix2-target="1" class="about__lottie-graph"
+                                    data-w-id="fe620dbb-7e32-6804-1b18-858b30e7fc19" data-animation-type="lottie"
+                                    data-src="/62fa5980cd922182416f3647/630f4ebe43db29499d4191e9_graph1.json"
+                                    data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
+                                    data-default-duration="1.1833333333333333" data-duration="2"></div>
+                                <div class="overflow-hidden mod--about-arrow">
+                                    <div class="overflow__anim">
+                                        <div class="icon mod--overflow-anim mod--about-arrow w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                        <div class="icon mod--about-arrow w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col mod--about">
+                            <a data-remodal-target="form" data-anim-counter="main"
+                                data-w-id="01dc928a-fd42-e94b-6308-4bc46eb9e343"
+                                style="-webkit-transform:translate3d(0, -15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -15.625rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                href="#" class="about__card mod--4 w-inline-block">
+                                <div class="overflow-hidden mod--about-arrow">
+                                    <div class="overflow__anim">
+                                        <div class="icon mod--overflow-anim mod--about-arrow w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                        <div class="icon mod--about-arrow w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div><img
+                                    src="/62fa5980cd922182416f3647/630cc5bd4e6253b928cd80cb_financial-card-02.svg"
+                                    loading="lazy" width="400" alt="" class="about__img" /><img
+                                    src="/62fa5980cd922182416f3647/63120ba405c41634f60a3fc6_card-balance-circle.svg"
+                                    loading="lazy" alt="" class="about__balance-circle" />
+                                <div class="about__balance-wrap mod--1">
+                                    <div data-anim-counter-second="10" data-anim-counter-first="10"> <span>10+
+                                            Hirings</span></div>
+                                </div>
+                                <!-- <div class="about__balance-wrap mod--2">
+                                    <div data-anim-counter-second="9467" data-anim-counter-first="2620">$ <span>2 620</span></div>
+                                </div>
+                                <div class="about__balance-wrap mod--3">
+                                    <div data-anim-counter-second="2570" data-anim-counter-first="6830">$ <span>6 830</span></div>
+                                </div>
+                                <div class="about__balance-wrap mod--4">
+                                    <div data-anim-counter-second="64" data-anim-counter-first="39"><span>39</span>%</div>
+                                </div> -->
+                            </a>
+                            <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="about__text-wrap">
+                                <h4>Service Usage Guidelines</h4>
+                                <p class="text-size-18 opacity-70">A list of popular answers</p>
+                            </div>
+                        </div>
+                        <div class="col mod--about mod--5">
+                            <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="about__text-wrap">
+                                <h4>Full Consultation</h4>
+                                <p class="text-size-18 opacity-70">Best managers</p>
+                            </div>
+                        </div>
+                        <div class="col mod--about"><img
+                                src="/62fa5980cd922182416f3647/630cbf83bbe8eaaeb5315fc1_financial-Statisctic-02.svg"
+                                loading="lazy" alt="" class="about__img-small mod--2" /><a data-remodal-target="form"
+                                style="-webkit-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                href="#" class="about__card mod--6 w-inline-block"><img
+                                    src="/62fa5980cd922182416f3647/62fb64165c5d986d1a9d1aae_financial-woman-02.webp"
+                                    loading="lazy"
+                                    srcset="/62fa5980cd922182416f3647/62fb64165c5d986d1a9d1aae_financial-woman-02-p-500.webp 500w, /62fa5980cd922182416f3647/62fb64165c5d986d1a9d1aae_financial-woman-02-p-800.webp 800w, /62fa5980cd922182416f3647/62fb64165c5d986d1a9d1aae_financial-woman-02.webp 800w"
+                                    width="400" sizes="(max-width: 991px) 29vw, 285.1875px" alt=""
+                                    class="about__img mod--hover" />
+                                <div class="overflow-hidden mod--about-arrow">
+                                    <div class="overflow__anim">
+                                        <div class="icon mod--overflow-anim mod--about-arrow w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                        <div class="icon mod--about-arrow w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a><img
+                                src="/62fa5980cd922182416f3647/630cbced5f000a5bfca205eb_card-connect-grey.svg"
+                                loading="lazy" alt="" class="about__connect" />
+                            <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                class="about__text-wrap">
+                                <h4>Analysis of your expenses</h4>
+                                <p class="text-size-18 opacity-70">Teaching introspection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="section mod--profess">
+                <div class="sticky">
+                    <div class="columns mod--profess">
+                        <div data-w-id="a7a3b2cd-6201-4824-9ad9-7adbe65e45a6" style="opacity:0"
+                            class="col col--1 mod--profess">
+                            <div class="profess__slider1-wrap">
+                                <div data-swiper="pagin-profess" class="swiper__pagination">
+                                    <div class="swiper__pagination-dot active"></div>
+                                    <div class="swiper__pagination-dot"></div>
+                                </div>
+                                <div data-swiper="profess1" class="swiper mod--profess1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide mod--profess1">
+                                            <div class="overflow-hidden">
+                                                <h3 data-anim="elem" class="profess__title active">Professional </h3>
+                                            </div>
+                                            <div class="overflow-hidden margin-bottom-32">
+                                                <h3 data-anim="elem" class="profess__title active">Communication</h3>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <p data-anim="elem" class="profess__p active">Our managers show empathy
+                                                    and care for their clients as individuals, it feels like they are
+                                                    fair with everyone.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide mod--profess1">
+                                            <div class="overflow-hidden">
+                                                <h3 data-anim="elem" class="profess__title">The Training </h3>
+                                            </div>
+                                            <div class="overflow-hidden margin-bottom-32">
+                                                <h3 data-anim="elem" class="profess__title">Modules</h3>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <p data-anim="elem" class="profess__p">Our quarterly training keeps our
+                                                    recruiters on top of industry standards and technology. We ensure to
+                                                    deliver quality to our clients.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide mod--profess1">
+                                            <div class="overflow-hidden">
+                                                <h3 data-anim="elem" class="profess__title">Developing</h3>
+                                            </div>
+                                            <div class="overflow-hidden margin-bottom-32">
+                                                <h3 data-anim="elem" class="profess__title">the strategy</h3>
+                                            </div>
+                                            <div class="overflow-hidden">
+                                                <p data-anim="elem" class="profess__p">We set trends and tendencies of
+                                                    the recruitment industry and do not stop introducing innovations.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profess__avatars-wrap"><img
+                                        src="/62fa5980cd922182416f3647/62fb6416056b6982196f60ef_communication--avas.webp"
+                                        loading="lazy" width="144" alt="" class="profess__avatars" />
+                                    <a href="#footer" class="btn-arrow w-inline-block">
+                                        <div class="btn-arrow__text">CONTACT</div>
+                                        <div class="overflow-hidden">
+                                            <div class="overflow__anim">
+                                                <div class="icon mod--overflow-anim w-embed"><svg viewBox="0 0 24 24"
+                                                        width="100%" height="100%" aria-hidden="true" role="img"
+                                                        fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="st0" d="M17.7,11.4l-0.7,0.7L17.7,11.4z M12.7,5.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4L12.7,5.3z M17.7,12.6
+	l-0.7-0.7l0,0L17.7,12.6z M11.3,17.3c-0.4,0.4-0.4,1,0,1.4c0.4,0.4,1,0.4,1.4,0L11.3,17.3z M18.4,10.7l-5.7-5.4l-1.4,1.5l5.7,5.4
+	L18.4,10.7z M18.4,13.3c0.8-0.7,0.8-1.9,0-2.7l-1.4,1.5c0,0-0.1-0.1-0.1-0.1s0-0.1,0.1-0.1L18.4,13.3z M12.7,18.7l5.7-5.4l-1.4-1.5
+	l-5.7,5.4L12.7,18.7z" />
+                                                        <path class="st0" d="M16.9,13.2c0.5,0,1-0.5,1-1c0-0.6-0.4-1-1-1L16.9,13.2z M6,11c-0.5,0-1,0.5-1,1c0,0.6,0.4,1,1,1L6,11z M17,11.1
+	L6,11L6,13l11,0.1L17,11.1z" />
+                                                    </svg></div>
+                                                <div class="icon mod--btn-arrow w-embed"><svg viewBox="0 0 24 24"
+                                                        width="100%" height="100%" aria-hidden="true" role="img"
+                                                        fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="st0" d="M17.7,11.4l-0.7,0.7L17.7,11.4z M12.7,5.3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4L12.7,5.3z M17.7,12.6
+	l-0.7-0.7l0,0L17.7,12.6z M11.3,17.3c-0.4,0.4-0.4,1,0,1.4c0.4,0.4,1,0.4,1.4,0L11.3,17.3z M18.4,10.7l-5.7-5.4l-1.4,1.5l5.7,5.4
+	L18.4,10.7z M18.4,13.3c0.8-0.7,0.8-1.9,0-2.7l-1.4,1.5c0,0-0.1-0.1-0.1-0.1s0-0.1,0.1-0.1L18.4,13.3z M12.7,18.7l5.7-5.4l-1.4-1.5
+	l-5.7,5.4L12.7,18.7z" />
+                                                        <path class="st0" d="M16.9,13.2c0.5,0,1-0.5,1-1c0-0.6-0.4-1-1-1L16.9,13.2z M6,11c-0.5,0-1,0.5-1,1c0,0.6,0.4,1,1,1L6,11z M17,11.1
+	L6,11L6,13l11,0.1L17,11.1z" />
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--2 mod--profess">
+                            <div data-swiper="profess2" class="swiper mod--profess2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide mod--profess2"><img
+                                            src="/62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03.webp"
+                                            loading="lazy" width="840" sizes="60vw" data-anim="elem"
+                                            srcset="/62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03-p-500.webp 500w, /62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03-p-800.webp 800w, /62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03-p-1080.webp 1080w, /62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03-p-1600.webp 1600w, /62fa5980cd922182416f3647/630ccfed348a955b10fcbc45_communication-person-03.webp 1680w"
+                                            alt="" class="profess__img" /></div>
+                                    <div class="swiper-slide mod--profess2"><img
+                                            src="/62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02.webp"
+                                            loading="eager" width="840" sizes="60vw" data-anim="elem"
+                                            srcset="/62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02-p-500.webp 500w, /62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02-p-800.webp 800w, /62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02-p-1080.webp 1080w, /62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02-p-1600.webp 1600w, /62fa5980cd922182416f3647/630ccfedaa781f19399639e5_communication-person-02.webp 1680w"
+                                            alt="" class="profess__img" /></div>
+                                    <div class="swiper-slide mod--profess2"><img
+                                            src="/62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01.webp"
+                                            loading="eager" width="840" sizes="60vw" data-anim="elem"
+                                            srcset="/62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01-p-500.webp 500w, /62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01-p-800.webp 800w, /62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01-p-1080.webp 1080w, /62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01-p-1600.webp 1600w, /62fa5980cd922182416f3647/630ccfedfde88d1cefff1b80_communication-person-01.webp 1680w"
+                                            alt="" class="profess__img" /></div>
+                                </div>
+                            </div>
+                            <div class="swiper__pagination">
+                                <div class="swiper__pagination-dot active"></div>
+                                <div class="swiper__pagination-dot"></div>
+                            </div>
+                            <div class="profess__btns"><a data-remodal-target="form" data-anim="hover-zoom" href="#"
+                                    class="profess__btn mod--1 w-inline-block"><img
+                                        src="/62fa5980cd922182416f3647/62fb641671e3a78e926b0f1d_ico-Credit-Card.svg"
+                                        loading="lazy" alt="" class="profess__ico" /><img
+                                        src="/62fa5980cd922182416f3647/630f537eac35924f86032299_money-hover.svg"
+                                        loading="lazy" data-anim="hover-zoom-img" alt="" class="btn__hover-zoom" /></a>
+                                <a data-remodal-target="form" data-anim="hover-zoom" href="#"
+                                    class="profess__btn mod--2 w-inline-block"><img
+                                        src="/62fa5980cd922182416f3647/62fb64166b97ca300aa8b603_ico-Star.svg"
+                                        loading="lazy" alt="" class="profess__ico" /><img
+                                        src="/62fa5980cd922182416f3647/630f537ef6f4072305b17db5_stars-hover.svg"
+                                        loading="lazy" data-anim="hover-zoom-img" alt="" class="btn__hover-zoom" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="mobile-app" class="section">
+                <div class="content">
+                    <div class="columns mod--app">
+                        <div data-w-id="82bdab70-ca72-a4e8-ce7f-a07abfc1e5c8" style="opacity:0"
+                            class="col col--1 mod--app">
+                            <p class="text-size-18 margin-bottom-16">MOBILE APP</p>
+                            <h2 class="margin-bottom-58">Looking for<br />a new role ?</h2>
+                        </div>
+                        <div data-w-id="ee34cbb6-460b-aec3-707a-8a8cdef4ca07" style="opacity:0"
+                            class="col col--2 mod--app">
+                            <p class="margin-bottom-24 text-size-18">Welcome to Tech One Consulting's Career Page! We
+                                are thrilled to offer you a vast array of exciting career opportunities in the
+                                ever-evolving world of IT. With hundreds of jobs waiting to be filled, we invite you to
+                                browse through our diverse range of positions and find the perfect fit for your skills
+                                and aspirations.</p>
+                            <a data-remodal-target="form" href="#" class="btnbig w-inline-block">
+                                <div class="btn-big__border"></div>
+                                <div class="btn-big__content">
+                                    <div class="btn-big__bg"></div>
+                                    <div class="btn-big__text">Browse Jobs</div>
+                                    <div class="arrow-wrap text-color-greendark mod--btn-big">
+                                        <div class="icon mod--arrow-btn w-embed"><svg viewBox="0 0 24 24" width="100%"
+                                                height="100%" aria-hidden="true" role="img" fill=currentColor
+                                                xmlns="http://www.w3.org/2000/svg">
+
+                                                <path
+                                                    d="M5.7,1.1c1.1-1.1,2.9-1.1,4,0l8.9,8.9c1.1,1.1,1.1,2.9,0,4l-8.9,8.9c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4 l6.9-6.9L5.7,5.1C4.6,4,4.6,2.2,5.7,1.1L5.7,1.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-w-id="5dd57ce1-35cb-624f-a448-812879721935" style="opacity:0"
+                            class="col col--3 mod--app">
+                            <div data-anim-counter="main" data-w-id="6dbec604-1020-e0da-869d-0c53e4f58cd6"
+                                class="app__img-wrap"><img
+                                    src="/62fa5980cd922182416f3647/630f5600b85550b3b09a6321_app-card.webp"
+                                    loading="lazy"
+                                    srcset="/62fa5980cd922182416f3647/630f5600b85550b3b09a6321_app-card-p-500.webp 500w, /62fa5980cd922182416f3647/630f5600b85550b3b09a6321_app-card.webp 800w"
+                                    sizes="29vw" alt="" class="app__img" /><img
+                                    src="/62fa5980cd922182416f3647/62fb64162fcf2267c8a97dbc_ava-boy.webp"
+                                    loading="lazy" alt="" class="app__img-ava" />
+                                <div class="app__total-wrap">
+                                    <div data-anim-counter-second="51200" data-anim-counter-first="32100">$ <span
+                                            class="app__total-span">32 100</span></div>
+                                </div>
+                                <div data-lottie="graph-2" data-is-ix2-target="1" class="app__lottie"
+                                    data-w-id="a05a89ea-3e16-e396-e9d4-c7684e478b12" data-animation-type="lottie"
+                                    data-src="/62fa5980cd922182416f3647/6315eb1fd96b258263be9c25_graph2.json"
+                                    data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
+                                    data-default-duration="1.1666666666666667" data-duration="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section mod--runline"></section>
+            <section id="services" class="section">
+                <div class="content">
+                    <div data-w-id="b61a1d9d-ebac-6c9a-af7e-f0448cacd2cb" style="opacity:0"
+                        class="columns mod--services-heading">
+                        <div class="col col--1 mod--services-heading">
+                            <p class="text-size-18">SERVICES</p>
+                        </div>
+                        <div class="col col--2">
+                            <h2 class="margin-bottom-58">Become our trusted vendor</h2>
+                            <p class="text-size-18">We extend a warm invitation to vendors from the staffing industry to
+                                join our team. Collaborate with us to provide exceptional staffing solutions and unlock
+                                new opportunities together. Join our platform today and explore a world of
+                                possibilities. Let's build a strong partnership and shape the future of staffing.</p>
+                        </div>
+                    </div>
+                    <div data-w-id="5fcf4255-675b-a9f0-4436-5dbfdd49afde" class="columns mod--services">
+                        <div class="col col--1 mod--services">
+                            <ul role="list" class="services__list">
+                                <li data-w-id="e5dab668-0d08-5ee2-e46f-6ff7512cf43c"
+                                    style="opacity:0;-webkit-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="services__list-item">
+                                    <div class="services__icon-wrap">
+                                        <div class="services__icon"><img
+                                                src="/62fa5980cd922182416f3647/62fb641645703e8058395332_ico-pen.svg"
+                                                loading="lazy" alt="" class="services__hover-pen" />
+                                            <div class="services__hover-pen-line"></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="margin-bottom-10">Warranty documents</h4>
+                                    <p class="text-size-18 opacity-70">An obligation in which a third party agrees to
+                                        repay a debt.</p>
+                                </li>
+                                <li data-w-id="54ad6f5f-8ca5-09fa-8bbe-ef2de4b8598d"
+                                    style="opacity:0;-webkit-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="services__list-item">
+                                    <div class="services__icon-wrap">
+                                        <div class="services__icon"><img
+                                                src="/62fa5980cd922182416f3647/62fb6416bbaf09751bf97286_ico-credit.svg"
+                                                loading="lazy" alt="" /><img
+                                                src="/62fa5980cd922182416f3647/62fb6416bbaf09751bf97286_ico-credit.svg"
+                                                loading="lazy" alt="" class="services__hover-finance" /></div>
+                                    </div>
+                                    <h4 class="margin-bottom-10">Quick credit</h4>
+                                    <p class="text-size-18 opacity-70">Money and tangible provided to you by the
+                                        creditor for use.</p>
+                                </li>
+                                <li data-w-id="ec92d956-fb30-67b8-14c8-b26dd232da31"
+                                    style="opacity:0;-webkit-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(6.25rem, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                    class="services__list-item">
+                                    <div class="services__icon-wrap">
+                                        <div class="services__icon mod--graph">
+                                            <div class="services__hover-graph mod--1"></div>
+                                            <div class="services__hover-graph mod--2"></div>
+                                            <div class="services__hover-graph mod--3"></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="margin-bottom-10">Create deposit</h4>
+                                    <p class="text-size-18 opacity-70">Return the money after a certain period of time
+                                        with interest.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                            class="col col--2 mod--services"><img
+                                src="/62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman.webp"
+                                loading="lazy"
+                                srcset="/62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman-p-500.webp 500w, /62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman-p-800.webp 800w, /62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman-p-1080.webp 1080w, /62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman-p-1600.webp 1600w, /62fa5980cd922182416f3647/62fb64178ac5707599a2613d_services-woman.webp 1692w"
+                                sizes="61vw" alt="" class="services__img" /><a data-remodal-target="form" href="#"
+                                class="services__btn w-inline-block"><img
+                                    src="/62fa5980cd922182416f3647/630f600ff78ec08a442baaa0_border-inside.svg"
+                                    loading="lazy" alt="" class="services__border-delta mod--2" /><img
+                                    src="/62fa5980cd922182416f3647/630f600ff78ec08a442baaa0_border-inside.svg"
+                                    loading="lazy" alt="" class="services__border-delta mod--1" />
+                                <h3>Get good service <br />from experts</h3>
+                                <div class="overflow-hidden mod--services-arrow">
+                                    <div class="overflow__anim">
+                                        <div class="icon mod--overflow-anim mod--services-arrow w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                        <div class="icon mod--services-arrow w-embed"><svg viewBox="0 0 24 24"
+                                                width="100%" height="100%" aria-hidden="true" role="img"
+                                                fill=currentColor xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.9,5.8c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1V5.8z M18.5,8h-1l0,0H18.5z M17.5,18.5c0,0.6,0.4,1,1,1s1-0.4,1-1
+	H17.5z M17.4,5.8H6.9v2h10.5V5.8z M19.5,8c0-1.2-1-2.2-2.2-2.2v2c0.1,0,0.2,0.1,0.2,0.2H19.5z M19.5,18.5V8h-2v10.5H19.5z" />
+                                                <path d="M18.4,8.5c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L18.4,8.5z M6.5,17.6c-0.4,0.4-0.4,1,0,1.4
+	c0.4,0.4,1,0.4,1.4,0L6.5,17.6z M17,7.1L6.5,17.6L7.9,19L18.4,8.5L17,7.1z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </section>
+            <section id="reviews" data-w-id="ce252312-8d4e-1cd7-6baf-a26ec2d17edd" class="section mod--reviews">
+                <div style="opacity:0" class="content">
+                    <div class="columns mod--reviews">
+                        <div style="-webkit-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(2.5rem, 2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="col mod--reviews mod--1"><img
+                                src="/62fa5980cd922182416f3647/630f77649fdc652bdc43fac5_reviews-woman.webp"
+                                loading="lazy" width="400"
+                                srcset="/62fa5980cd922182416f3647/630f77649fdc652bdc43fac5_reviews-woman-p-500.webp 500w, /62fa5980cd922182416f3647/630f77649fdc652bdc43fac5_reviews-woman.webp 800w"
+                                sizes="(max-width: 479px) 44vw, 29vw" alt="" class="reviews__woman" /><img
+                                src="/62fa5980cd922182416f3647/630f7b1ebc0f5067a983fa98_card-connect-gradient.svg"
+                                loading="lazy" alt="" class="reviews__connect-grad" /><img
+                                src="/62fa5980cd922182416f3647/630f7b1e837436815e02a164_card-connect.svg"
+                                loading="lazy" alt="" class="reviews__connect" /><a data-remodal-target="form"
+                                data-anim="hover-zoom"
+                                style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                                href="#" class="reviews__btn-star-wrap w-inline-block"><img
+                                    src="/62fa5980cd922182416f3647/6310859781e79c62764a0905_ico-heart-orange.svg"
+                                    loading="lazy" alt="" class="reviews__btn-star" /><img
+                                    src="/62fa5980cd922182416f3647/631085979721a75c89b6238f_hearts-hover.svg"
+                                    loading="lazy" data-anim="hover-zoom-img" alt=""
+                                    class="btn__hover-zoom mod--reviews" />
+                                <div class="reviews__btn-star-bg"></div>
+                            </a></div>
+                        <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="col mod--reviews mod--2">
+                            <p class="text-size-18 margin-bottom-16 text-color-white">REVIEWS</p>
+                            <h2 class="text-color-white">Hear it from <br />our clients</h2>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="col mod--reviews mod--3">
+                            <p class="text-size-18 text-color-white">After using our service, as well as communicating
+                                with our managers, we are very interested in the opinions of our customers. You can
+                                leave a review on our website.</p>
+                        </div>
+                        <div class="col mod--reviews"></div>
+                        <div style="-webkit-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-2.5rem, -2.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="col mod--reviews mod--5">
+                            <div class="reviews__block mod--review"><img
+                                    src="/62fa5980cd922182416f3647/62fb64162fcf2267c8a97dbc_ava-boy.webp"
+                                    loading="lazy" width="86" alt="" class="reviews__ava" />
+                                <p class="margin-bottom-48">We easily and quickly received the money from the consumers
+                                    grow Sight Bank.</p>
+                                <div class="reviews__rating-wrap">
+                                    <div class="reviews__rating"><img
+                                            src="/62fa5980cd922182416f3647/630f764a92bdb52ee6a5b18c_ico-star-review.svg"
+                                            loading="lazy" alt="" class="reviews__rating-star" />
+                                        <div>5</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div>John Macish</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="-webkit-transform:translate3d(0, -9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -9.375rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            class="col mod--reviews mod--6">
+                            <div class="reviews__block">
+                                <div class="form-wrapper w-form">
+                                    <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                                        class="form">
+                                        <h3 class="margin-bottom-16">Get in touch</h3><input type="text"
+                                            class="input w-input" maxlength="256" name="name" data-name="Name"
+                                            placeholder="Your name" id="name" required="" /><input type="text"
+                                            class="input w-input" maxlength="256" name="Comment" data-name="Comment"
+                                            placeholder="Your comment" id="Comment" required="" />
+                                        <a href="#" class="btn mod--submit w-inline-block">
+                                            <div class="overflow-hidden mod--btn">
+                                                <div class="overflow__anim mod--interact">
+                                                    <div class="btn__txt mod--normal">SEND</div>
+                                                    <div class="btn__txt mod--absolute">SEND</div>
+                                                </div>
+                                            </div>
+                                            <div class="btn__bg mod--1"></div>
+                                            <div class="btn__bg mod--2"></div>
+                                        </a>
+                                    </form>
+                                    <div class="w-form-done">
+                                        <div>Thank you! Your submission has been received!</div>
+                                    </div>
+                                    <div class="w-form-fail">
+                                        <div>Oops! Something went wrong while submitting the form.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height:0rem" class="reviews__bg-orange"></div><img
+                        src="/62fa5980cd922182416f3647/62fb64178ac5706792a2613c_reviews-woman.webp"
+                        loading="lazy" width="200"
+                        style="-webkit-transform:translate3d(0, -5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                        alt="" class="reviews__woman-small" />
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="section mod--footer">
+            <div class="content">
+                <div class="columns mod--footer">
+                    <div class="col col--1 mod--footer"><a href="#" class="logo-link w-inline-block"><img
+                                src="/62fa5980cd922182416f3647/62fb6416d261574831544bbd_logo-black.svg"
+                                loading="eager" alt="" class="logo mod--footer" /></a></div>
+                    <div class="col col--2 mod--footer">
+                        <div class="nav mod--footer"><a href="#home" class="nav-link">Home</a><a
+                                data-remodal-target="form" href="http://" target="_blank" class="nav-link">Mobile
+                                app</a><a data-remodal-target="form" href="#" class="nav-link">About us</a><a
+                                data-remodal-target="form" href="http://" target="_blank"
+                                class="nav-link">services</a><a data-remodal-target="form" href="#"
+                                class="nav-link">Advantages</a><a data-remodal-target="form" href="http://"
+                                target="_blank" class="nav-link">Reviews</a></div>
+                    </div>
+                    <div class="col col--3 mod--footer">
+                        <div class="form-wrapper w-form">
+                            <form id="wf-form-form" name="wf-form-form" data-name="form" method="get" class="form">
+                                <p class="footer__title mod--form">Be the first to hear <br />our sight banking news</p>
+                                <input type="email" class="input mod--footer w-input" autocomplete="email"
+                                    maxlength="256" name="email-2" data-name="Email 2" placeholder="Your e-mail"
+                                    id="email-2" required="" />
+                                <div class="form__submit-wrap">
+                                    <div class="arrow-wrap text-color-orange mod--form">
+                                        <div class="form__submit-result-wrap">
+                                            <div form-submitted="anim" class="form__submit-result active"><img
+                                                    src="/62fa5980cd922182416f3647/632c079d9c754c2db4569616_ico-checked.svg"
+                                                    loading="lazy" alt="" class="form__submit-result-ico" /></div>
+                                        </div>
+                                        <div form-submitted="anim" class="icon mod--arrow-submit active w-embed"><svg
+                                                viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"
+                                                role="img" fill=currentColor xmlns="http://www.w3.org/2000/svg">
+
+                                                <path
+                                                    d="M5.7,1.1c1.1-1.1,2.9-1.1,4,0l8.9,8.9c1.1,1.1,1.1,2.9,0,4l-8.9,8.9c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4 l6.9-6.9L5.7,5.1C4.6,4,4.6,2.2,5.7,1.1L5.7,1.1z" />
+                                            </svg></div><input type="submit" data-wait=" " value=" "
+                                            class="form__submit w-button" />
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="w-form-done">
+                                <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns mod--footer mod--2">
+                    <div class="col col--1 mod--footer">
+                        <h3>Stay connect with <br />anyone &amp; anywhere</h3>
+                    </div>
+                    <div class="col col--2 mod--footer">
+                        <p class="footer__title">We in social</p>
+                        <div class="social">
+                            <a href="#" class="social-link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="icon mod--social w-embed"><svg aria-hidden="true" role="img"
+                                                fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" />
+                                            </svg></div>
+                                        <div class="icon mod--social mod--absolute w-embed"><svg aria-hidden="true"
+                                                role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                            <a href="#" class="social-link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="icon mod--social w-embed"><svg aria-hidden="true" role="img"
+                                                fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28137 16.5819 8.51628 16.4805 8.721 16.3321C8.92138 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z" />
+                                            </svg></div>
+                                        <div class="icon mod--social mod--absolute w-embed"><svg aria-hidden="true"
+                                                role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28137 16.5819 8.51628 16.4805 8.721 16.3321C8.92138 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                            <a href="#" class="social-link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="icon mod--social w-embed"><svg aria-hidden="true" role="img"
+                                                fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.94043 5.00002C6.94016 5.53046 6.7292 6.03906 6.35394 6.41394C5.97868 6.78883 5.46986 6.99929 4.93943 6.99902C4.409 6.99876 3.90039 6.78779 3.52551 6.41253C3.15062 6.03727 2.94016 5.52846 2.94043 4.99802C2.9407 4.46759 3.15166 3.95899 3.52692 3.5841C3.90218 3.20922 4.411 2.99876 4.94143 2.99902C5.47186 2.99929 5.98047 3.21026 6.35535 3.58552C6.73024 3.96078 6.9407 4.46959 6.94043 5.00002V5.00002ZM7.00043 8.48002H3.00043V21H7.00043V8.48002ZM13.3204 8.48002H9.34043V21H13.2804V14.43C13.2804 10.77 18.0504 10.43 18.0504 14.43V21H22.0004V13.07C22.0004 6.90002 14.9404 7.13002 13.2804 10.16L13.3204 8.48002V8.48002Z" />
+                                            </svg></div>
+                                        <div class="icon mod--social mod--absolute w-embed"><svg aria-hidden="true"
+                                                role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.94043 5.00002C6.94016 5.53046 6.7292 6.03906 6.35394 6.41394C5.97868 6.78883 5.46986 6.99929 4.93943 6.99902C4.409 6.99876 3.90039 6.78779 3.52551 6.41253C3.15062 6.03727 2.94016 5.52846 2.94043 4.99802C2.9407 4.46759 3.15166 3.95899 3.52692 3.5841C3.90218 3.20922 4.411 2.99876 4.94143 2.99902C5.47186 2.99929 5.98047 3.21026 6.35535 3.58552C6.73024 3.96078 6.9407 4.46959 6.94043 5.00002V5.00002ZM7.00043 8.48002H3.00043V21H7.00043V8.48002ZM13.3204 8.48002H9.34043V21H13.2804V14.43C13.2804 10.77 18.0504 10.43 18.0504 14.43V21H22.0004V13.07C22.0004 6.90002 14.9404 7.13002 13.2804 10.16L13.3204 8.48002V8.48002Z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                            <a href="#" class="social-link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="icon mod--social w-embed"><svg aria-hidden="true" role="img"
+                                                fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7V7ZM18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75V6.75ZM12 4C9.526 4 9.122 4.007 7.971 4.058C7.187 4.095 6.661 4.2 6.173 4.39C5.739 4.558 5.426 4.759 5.093 5.093C4.78001 5.3954 4.53935 5.76458 4.389 6.173C4.199 6.663 4.094 7.188 4.058 7.971C4.006 9.075 4 9.461 4 12C4 14.474 4.007 14.878 4.058 16.029C4.095 16.812 4.2 17.339 4.389 17.826C4.559 18.261 4.759 18.574 5.091 18.906C5.428 19.242 5.741 19.443 6.171 19.609C6.665 19.8 7.191 19.906 7.971 19.942C9.075 19.994 9.461 20 12 20C14.474 20 14.878 19.993 16.029 19.942C16.811 19.905 17.338 19.8 17.826 19.611C18.259 19.442 18.574 19.241 18.906 18.909C19.243 18.572 19.444 18.259 19.61 17.829C19.8 17.336 19.906 16.809 19.942 16.029C19.994 14.925 20 14.539 20 12C20 9.526 19.993 9.122 19.942 7.971C19.905 7.189 19.8 6.661 19.61 6.173C19.4593 5.765 19.2191 5.39596 18.907 5.093C18.6047 4.77985 18.2355 4.53917 17.827 4.389C17.337 4.199 16.811 4.094 16.029 4.058C14.925 4.006 14.539 4 12 4ZM12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2Z" />
+                                            </svg></div>
+                                        <div class="icon mod--social mod--absolute w-embed"><svg aria-hidden="true"
+                                                role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7V7ZM18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75V6.75ZM12 4C9.526 4 9.122 4.007 7.971 4.058C7.187 4.095 6.661 4.2 6.173 4.39C5.739 4.558 5.426 4.759 5.093 5.093C4.78001 5.3954 4.53935 5.76458 4.389 6.173C4.199 6.663 4.094 7.188 4.058 7.971C4.006 9.075 4 9.461 4 12C4 14.474 4.007 14.878 4.058 16.029C4.095 16.812 4.2 17.339 4.389 17.826C4.559 18.261 4.759 18.574 5.091 18.906C5.428 19.242 5.741 19.443 6.171 19.609C6.665 19.8 7.191 19.906 7.971 19.942C9.075 19.994 9.461 20 12 20C14.474 20 14.878 19.993 16.029 19.942C16.811 19.905 17.338 19.8 17.826 19.611C18.259 19.442 18.574 19.241 18.906 18.909C19.243 18.572 19.444 18.259 19.61 17.829C19.8 17.336 19.906 16.809 19.942 16.029C19.994 14.925 20 14.539 20 12C20 9.526 19.993 9.122 19.942 7.971C19.905 7.189 19.8 6.661 19.61 6.173C19.4593 5.765 19.2191 5.39596 18.907 5.093C18.6047 4.77985 18.2355 4.53917 17.827 4.389C17.337 4.199 16.811 4.094 16.029 4.058C14.925 4.006 14.539 4 12 4ZM12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2Z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                            <a href="#" class="social-link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact">
+                                        <div class="icon mod--social mod--dribble w-embed"><svg aria-hidden="true"
+                                                role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <title>Dribbble icon</title>
+                                                <path
+                                                    d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+                                            </svg></div>
+                                        <div class="icon mod--social mod--absolute mod--dribble w-embed"><svg
+                                                aria-hidden="true" role="img" fill=currentColor viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <title>Dribbble icon</title>
+                                                <path
+                                                    d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col--3 mod--footer">
+                        <div class="appstore">
+                            <a href="#" class="appstore__link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact"><img
+                                            src="/62fa5980cd922182416f3647/62fb64166a8a275315c1d1b7_logo-App-store.svg"
+                                            loading="lazy" alt="" class="appstore__img" /><img
+                                            src="/62fa5980cd922182416f3647/62fb64166a8a275315c1d1b7_logo-App-store.svg"
+                                            loading="lazy" alt="" class="appstore__img mod--absolute" /></div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                            <a href="#" class="appstore__link w-inline-block">
+                                <div class="overflow-hidden mod--btn">
+                                    <div class="overflow__anim mod--interact"><img
+                                            src="/62fa5980cd922182416f3647/62fb6417056b6977f16f60f2_logo-Play-market.svg"
+                                            loading="lazy" alt="" class="appstore__img" /><img
+                                            src="/62fa5980cd922182416f3647/62fb6417056b6977f16f60f2_logo-Play-market.svg"
+                                            loading="lazy" alt="" class="appstore__img mod--absolute" /></div>
+                                </div>
+                                <div class="btn__bg mod--1 mod--blue"></div>
+                                <div class="btn__bg mod--2 mod--blue"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns mod--footer">
+                    <div class="col col--1 mod--footer mod--copyright"><a href="https://www.halo-lab.com/"
+                            target="_blank" class="footer__copyright w-inline-block"><img
+                                src="/62fa5980cd922182416f3647/6310744a62ead97d70cd5669_logo-halolab.svg"
+                                loading="lazy" alt="" class="footer__copyright-logo" />
+                            <div>2022 Halo lab © All rights reserved</div>
+                        </a></div>
+                    <div class="col col--3 mod--footer mod--copyright"><a href="#" class="footer__term-link">Privacy
+                            policy</a><a href="#" class="footer__term-link">Terms of service</a></div>
+                </div>
+            </div>
+            <div class="footer__follow-wrap">
+                <div class="footer__follow"><span data-w-id="e5a591ce-ca80-8e73-bcc8-a6a138082076"
+                        class="footer__follow-heart"> </span><a
+                        href="https://webflow.com/made-in-webflow/website/sight-banking" target="_blank"
+                        class="footer__follow-link">Like</a> <span class="footer__follow-and">&amp;</span> <a
+                        href="https://webflow.com/halolab" target="_blank" class="footer__follow-link">Follow</a> from
+                    you. New free to use projects from us.</div>
+            </div>
+        </footer>
+        <div data-remodal-id="form" class="remodal remodal--global">
+            <div data-remodal-action="close" class="remodal__close"></div><img
+                src="/62fa5980cd922182416f3647/635fef1e733c6395e378ef24_modal-form.webp"
+                loading="eager"
+                srcset="/62fa5980cd922182416f3647/635fef1e733c6395e378ef24_modal-form-p-500.webp 500w, /62fa5980cd922182416f3647/635fef1e733c6395e378ef24_modal-form-p-800.webp 800w, /62fa5980cd922182416f3647/635fef1e733c6395e378ef24_modal-form-p-1080.webp 1080w, /62fa5980cd922182416f3647/635fef1e733c6395e378ef24_modal-form.webp 1192w"
+                sizes="(max-width: 479px) 100vw, (max-width: 767px) 34vw, 43vw" alt="" class="remodal__img" />
+            <div class="remodal__content">
+                <div class="remodal__text-wrap">
+                    <div class="remodal__heading">Subscribe to our newsleter</div>
+                    <p class="remodal__text">Get weekly updates on the newest cloneable websites right in your mailbox.
+                    </p>
+                </div>
+                <div class="form-wrapper w-form">
+                    <form id="wf-form-form" name="wf-form-form" data-name="form" method="get" class="form"><input
+                            type="email" class="input mod--footer w-input" autocomplete="email" maxlength="256"
+                            name="Email" data-name="Email" placeholder="Your e-mail" id="Email-3" required="" />
+                        <div class="form__submit-wrap">
+                            <div class="arrow-wrap text-color-orange mod--form">
+                                <div class="form__submit-result-wrap">
+                                    <div form-submitted="anim" class="form__submit-result active"><img
+                                            src="/62fa5980cd922182416f3647/632c079d9c754c2db4569616_ico-checked.svg"
+                                            loading="lazy" alt="" class="form__submit-result-ico" /></div>
+                                </div>
+                                <div form-submitted="anim" class="icon mod--arrow-submit active w-embed"><svg
+                                        viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true" role="img"
+                                        fill=currentColor xmlns="http://www.w3.org/2000/svg">
+
+                                        <path
+                                            d="M5.7,1.1c1.1-1.1,2.9-1.1,4,0l8.9,8.9c1.1,1.1,1.1,2.9,0,4l-8.9,8.9c-1.1,1.1-2.9,1.1-4,0c-1.1-1.1-1.1-2.9,0-4 l6.9-6.9L5.7,5.1C4.6,4,4.6,2.2,5.7,1.1L5.7,1.1z" />
+                                    </svg></div><input type="submit" data-wait=" " value=" "
+                                    class="form__submit w-button" />
+                            </div>
+                        </div>
+                    </form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62fa5980cd922182416f3647"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="/62fa5980cd922182416f3647/js/webflow.622e114f3.js"
+        type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        type="text/javascript"></script>
+
+    <script>
+        SmoothScroll({
+            animationTime: 800, // [ms]
+            stepSize: 100, // [px]
+            accelerationDelta: 50, // 50
+            accelerationMax: 3, // 3
+            touchpadSupport: false,
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        window.REMODAL_GLOBALS = {
+            DEFAULTS: {
+                hashTracking: false
+            }
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" type="text/javascript"></script>
+
+    <style>
+        /* Style modal */
+
+        .remodal-overlay {
+            background: rgba(11, 12, 27, 0.9);
+        }
+
+        .remodal {
+            transform: scale(1) !important;
+        }
+
+        .remodal-wrapper {
+            padding: 0px;
+            overflow: hidden;
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        body {
+            padding-right: 0px !important;
+        }
+    </style>
+
+    <script>
+        $(function () {
+
+            var swiper1 = new Swiper("[data-swiper=profess1]", {
+                speed: 0,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '[data-swiper=pagin-profess]',
+                    type: 'bullets',
+                },
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        opacity: 0,
+                    },
+                    next: {
+                        opacity: 0,
+                    },
+                },
+            });
+
+            var swiper2 = new Swiper("[data-swiper=profess2]", {
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        opacity: 0,
+                        translate: [0, "0%", 0],
+                    },
+                    next: {
+                        opacity: 0,
+                        translate: [0, "100%", 0],
+                    },
+                },
+            });
+
+            $(window).scroll(function () {
+                let offset = $(".section.mod--profess")[0].getBoundingClientRect();
+                if (offset.top < 0 && offset.bottom - window.innerHeight > 0) {
+                    let perc = Math.round(100 * Math.abs(offset.top) / (offset.height - $(window).height()));
+                    console.log(perc);
+                    if (perc > 5 && perc < 30) {
+                        swiper1.slideTo(0, 300);
+                        swiper2.slideTo(0, 800);
+                    } else if (perc > 30 && perc < 50) {
+                        swiper1.slideTo(1, 300);
+                        swiper2.slideTo(1, 800);
+                    } else if (perc > 65) {
+                        swiper1.slideTo(2, 300);
+                        swiper2.slideTo(2, 800);
+                    }
+                }
+            });
+
+            swiper1.on('transitionEnd', function () {
+                let slides = $(swiper1.el).find('.swiper-slide');
+                $(slides).not(`:eq(${swiper1.activeIndex})`).find('[data-anim=elem]').removeClass('active');
+                $(slides[swiper1.activeIndex]).find('[data-anim=elem]').addClass('active');
+            });
+
+
+
+            function featuredAnimate(current) {
+                $('[data-anim=featured-overflow]').each(function () {
+                    let arr = $(this).children('div');
+                    for (var i = 0; i < arr.length; i++) {
+                        $(arr[i]).removeClass('active done');
+                        if (i < current) {
+                            $(arr[i]).addClass('done');
+                        }
+                        if (i == current) {
+                            $(arr[i]).addClass('active');
+                        }
+                    }
+                });
+            }
+
+            $('.featured__anim').removeClass('done');
+            $('.col.mod--featured-choose').on('click', function () {
+                let index = $(this).index('.col.mod--featured-choose');
+                $('.col.mod--featured-choose').removeClass('active');
+                $(this).addClass('active');
+                if (index == 1) {
+                    featuredAnimate(index);
+                    $('.featured__line').css('left', '20%');
+                } else if (index == 2) {
+                    featuredAnimate(index);
+                    $('.featured__line').css('left', '40%');
+                } else if (index == 3) {
+                    featuredAnimate(index);
+                    $('.featured__line').css('left', '60%');
+                } else if (index == 4) {
+                    featuredAnimate(index);
+                    $('.featured__line').css('left', '80%');
+                } else {
+                    featuredAnimate(index);
+                    $('.featured__line').css('left', '0%');
+                }
+            });
+
+
+
+
+
+            function counter(elem, value) {
+                let $this = elem.text().replace(/\s/g, '');
+                $(elem).prop('Counter', $this).animate({
+                    Counter: value
+                }, {
+                    duration: 800,
+                    easing: 'swing',
+                    step: function (now) {
+                        let result = Math.ceil(now).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+                        console.log(result)
+                        $(this).text(result);
+                    }
+                });
+            }
+
+            // animate counter
+            $('[data-anim-counter]').hover(function () {
+                $(this).find('[data-anim-counter-second]').each(function (index, el) {
+                    let second = $(this).attr('data-anim-counter-second');
+                    let elem = $(this).children('span');
+                    $(elem).stop();
+                    counter(elem, second);
+                });
+
+            }, function () {
+                $(this).find('[data-anim-counter-first]').each(function (index, el) {
+                    let first = $(this).attr('data-anim-counter-first');
+                    let elem = $(this).children('span');
+                    $(elem).stop();
+                    counter(elem, first);
+                });
+            });
+
+        });
+    </script>
+
+
+
+    <!-- Sendpulse and global script for form -->
+    <style>
+        form {
+            display: block !important
+        }
+
+        .w-form-done {
+            display: none !important
+        }
+
+        .sp-form-outer {
+            display: none;
+        }
+    </style>
+    <script async src="//web.webformscr.com/apps/fc3/build/loader.js"
+        sp-form-id="cac2ef63a1f70fdc99ea3d07fb7c7e53e21a41060b1f9937ab427588f3368d6d"></script>
+    <script async src="https://amosk.com.ua/js/projects/halolab/forms.js"></script>
+</body>
+
+</html>
